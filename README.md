@@ -1,2 +1,0 @@
-# frcom
-Верстка FRCOM
