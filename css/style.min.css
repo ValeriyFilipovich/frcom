@@ -11458,6 +11458,9 @@ section {
   max-height: 200px;
   overflow-y: scroll;
 }
+.lk-information__content .tabs__panel::-webkit-scrollbar {
+  display: none;
+}
 .lk-information__header {
   margin-bottom: 0.45em;
 }
