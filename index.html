@@ -118,7 +118,7 @@
       </div>
       <div class="lk-row">
 
-        <div class="lk-row__item lk-block lk-row__person lk-person">
+        <div class="lk-row__item lk-block lk-person lk-row__person">
           <div class="lk-block__inner">
             <div class="lk-block__header lk-row__header">
               <h3>Мой менеджер</h3>
@@ -179,7 +179,7 @@
             </ul>
           </div>
         </div>
-        <div class="lk-row__item lk-block lk-row__person lk-person">
+        <div class="lk-row__item lk-block lk-person lk-row__person">
           <div class="lk-block__inner">
             <div class="lk-block__header lk-row__header">
               <h3>Мой преподаватель</h3>
@@ -244,7 +244,7 @@
       </div>
       <div class="lk-row">
 
-        <div class="lk-row__item lk-block lk-row__person lk-information">
+        <div class="lk-row__item lk-block lk-information">
           <div class="lk-block__inner">
             <div class="lk-block__header lk-row__header lk-information__header">
               <h3>Информация</h3>
@@ -277,7 +277,7 @@
           </div>
         </div>
 
-        <div class="lk-row__item lk-block lk-row__person lk-schedule">
+        <div class="lk-row__item lk-block lk-schedule">
           <div class="lk-block__inner">
             <div class="lk-block__header lk-row__header lk-schedule__header">
               <h3>Расписание занятий</h3>
@@ -317,17 +317,18 @@
             </div>
           </div>
         </div>
-
       </div>
 
 
       <div class="lk-row">
-        <div class="lk-row__item lk-block lk-row__person lk-progress">
+        <div class="lk-row__item lk-block lk-progress">
           <div class="lk-block__inner">
             <div class="lk-block__header lk-row__header lk-progress__header">
               <h3>Прогресс обучения</h3>
-              <span>Last activity on 24.10.2022</span>
+              <span class="lk-progress__last-activity">Last activity on 24.10.2022</span>
             </div>
+            <span class="lk-progress__last-activity lk-progress__last-activity--mobile">Last activity on
+              24.10.2022</span>
             <div class="lk-progress__bar progress">
               <progress max="100" value="40"></progress>
               <div class="progress-value"></div>
@@ -338,6 +339,39 @@
             <div class="lk-progress__footer">
               16 Units | 79 Topics | 626 Activities
             </div>
+          </div>
+        </div>
+        <div class="lk-row__item lk-block lk-orders lk-orders">
+          <div class="lk-block__inner">
+            <div class="lk-block__header lk-row__header lk-orders__header">
+              <h3>Мои заказы</h3>
+              <a href="#" class="lk-orders__button">Покупка занятий</a>
+            </div>
+            <table class="lk-orders__table table-orders">
+              <thead>
+                <tr>
+                  <th>Заказ</th>
+                  <th>Дата</th>
+                  <th>Статус</th>
+                  <th>Сумма</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-orders__id">#54667</td>
+                  <td class="table-orders__date">09.12.2022</td>
+                  <td class="table-orders__status">Выполнен</td>
+                  <td class="table-orders__price">2 500 ₽</td>
+                </tr>
+                <tr>
+                  <td class="table-orders__id">#54667</td>
+                  <td class="table-orders__date">09.12.2022</td>
+                  <td class="table-orders__status">Выполнен</td>
+                  <td class="table-orders__price">1 500 ₽</td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#" class="lk-orders__button lk-orders__button--mobile">Покупка занятий</a>
           </div>
         </div>
       </div>
@@ -354,9 +388,172 @@
         </li>
       </ul>
 
-    </div>
-    
-  </main>
+      <div class="lk-row">
+        <div class="lk-row__item lk-block lk-carousel">
+          <div class="lk-block__inner">
+            <div class="lk-block__header lk-row__header lk-carousel__header">
+              <h3>Мероприятия</h3>
+              <div class="lk-carousel__buttons">
+                <button type="button" class="lk-carousel__prev swiper-button-prev">
+                  <svg>
+                    <use xlink:href="#slider-left-button"></use>
+                  </svg>
+                </button>
+                <button type="button" class="lk-carousel__next swiper-button-next">
+                  <svg>
+                    <use xlink:href="#slider-right-button"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- Оболочка слайдера -->
+            <div class="lk-carousel__slider swiper">
+              <!-- Двигающееся часть слайдера -->
+              <div class="lk-carousel__wrapper swiper-wrapper">
+                <!-- Слайд -->
+                <a href="#" class="carousel-slide lk-carousel__slide swiper-slide">
+                  <img src="images/slider-1.jpg" alt="Slider Image" class="carousel-slide__img">
+                  <div class="carousel-slide__content">
+                    <h4 class="carousel-slide__title">Лидерство во времена турбулентности</h4>
+                    <span class="carousel-slide__date">12.01.2023</span>
+                    <p class="carousel-slide__text">Приглашаем всех желающих 15 ноября 2022 в 12:30 (МСК) на открытый
+                      вебинар
+                      "Лидерство во времена турбулентности". Спикеры
+                      — СВЕТЛАНА БОНДАРЧУК, АННА МЕДНИКОВА и ЕЛЕНА КОВАЛЕВА.</p>
+                    <span class="carousel-slide__link">
+                      Подробнее
+                      <svg>
+                        <use xlink:href="#more-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+                <a href="#" class="carousel-slide lk-carousel__slide swiper-slide">
+                  <img src="images/slider-1.jpg" alt="Slider Image" class="carousel-slide__img">
+                  <div class="carousel-slide__content">
+                    <h4 class="carousel-slide__title">2Лидерство во времена турбулентности</h4>
+                    <span class="carousel-slide__date">12.01.2023</span>
+                    <p class="carousel-slide__text">Приглашаем всех желающих 15 ноября 2022 в 12:30 (МСК) на открытый
+                      вебинар
+                      "Лидерство во времена турбулентности". Спикеры
+                      — СВЕТЛАНА БОНДАРЧУК, АННА МЕДНИКОВА и ЕЛЕНА КОВАЛЕВА.</p>
+                    <span class="carousel-slide__link">
+                      Подробнее
+                      <svg>
+                        <use xlink:href="#more-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lk-row__item lk-block lk-carousel">
+          <div class="lk-block__inner">
+            <div class="lk-block__header lk-row__header lk-carousel__header">
+              <h3>Курсы</h3>
+              <div class="lk-carousel__buttons">
+                <button type="button" class="lk-carousel__prev swiper-button-prev">
+                  <svg>
+                    <use xlink:href="#slider-left-button"></use>
+                  </svg>
+                </button>
+                <button type="button" class="lk-carousel__next swiper-button-next">
+                  <svg>
+                    <use xlink:href="#slider-right-button"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- Оболочка слайдера -->
+            <div class="lk-carousel__slider swiper">
+              <!-- Двигающееся часть слайдера -->
+              <div class="lk-carousel__wrapper swiper-wrapper">
+                <!-- Слайд -->
+                <a href="#" class="carousel-slide lk-carousel__slide swiper-slide">
+                  <img src="images/slider-2.jpg" alt="Slider Image" class="carousel-slide__img">
+                  <div class="carousel-slide__content">
+                    <h4 class="carousel-slide__title">Лидерство во времена турбулентности</h4>
+                    <span class="carousel-slide__date">12.01.2023</span>
+                    <p class="carousel-slide__text">Приглашаем всех желающих 15 ноября 2022 в 12:30 (МСК) на открытый
+                      вебинар
+                      "Лидерство во времена турбулентности". Спикеры
+                      — СВЕТЛАНА БОНДАРЧУК, АННА МЕДНИКОВА и ЕЛЕНА КОВАЛЕВА.</p>
+                    <span class="carousel-slide__link">
+                      Подробнее
+                      <svg>
+                        <use xlink:href="#more-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+                <a href="#" class="carousel-slide lk-carousel__slide swiper-slide">
+                  <img src="images/slider-1.jpg" alt="Slider Image" class="carousel-slide__img">
+                  <div class="carousel-slide__content">
+                    <h4 class="carousel-slide__title">2Лидерство во времена турбулентности</h4>
+                    <span class="carousel-slide__date">12.01.2023</span>
+                    <p class="carousel-slide__text">Приглашаем всех желающих 15 ноября 2022 в 12:30 (МСК) на открытый
+                      вебинар
+                      "Лидерство во времена турбулентности". Спикеры
+                      — СВЕТЛАНА БОНДАРЧУК, АННА МЕДНИКОВА и ЕЛЕНА КОВАЛЕВА.</p>
+                    <span class="carousel-slide__link">
+                      Подробнее
+                      <svg>
+                        <use xlink:href="#more-link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="lk-row">
+        <div class="lk-block lk-blog">
+          <div class="lk-block__inner">
+            <div class="lk-block__header lk-row__header lk-blog__header">
+              <h3>The Daily Minute</h3>
+              <span class="lk-blog__date">09.01.2023</span>
+            </div>
+            <span class="lk-blog__date lk-blog__date--mobile">09.01.2023</span>
+            <div class="lk-blog__grid">
+              <div class="lk-blog__item"> <img src="images/dm-1.jpg" alt="Blog Image" class="lk-blog__img">
+                <div class="lk-blog__content">
+                  <h4 class="lk-blog__title">Что на&nbsp;самом деле происходит с&nbsp;вашим мозгом, когда вы&nbsp;становитесь
+                    миллиардером</h4>
+                  <p class="lk-blog__text">What happens to&nbsp;your brain when you become a&nbsp;billionaire</p>
+                </div>
+              </div>
+              <div class="lk-blog__item"> <img src="images/dm-2.jpg" alt="Blog Image" class="lk-blog__img">
+                <div class="lk-blog__content">
+                  <h4 class="lk-blog__title">26&nbsp;лучших бесплатных приложений, сайтов и&nbsp;подкастов о&nbsp;фитнесе</h4>
+                  <p class="lk-blog__text">Break a&nbsp;sweat without breaking the bank: 26&nbsp;of&nbsp;the best free or&nbsp;cheap
+                    fitness apps, sites and podcasts</p>
+                </div>
+              </div>
+              <div class="lk-blog__item"> <img src="images/dm-3.jpg" alt="Blog Image" class="lk-blog__img">
+                <div class="lk-blog__content">
+                  <h4 class="lk-blog__title">Что на&nbsp;самом деле происходит с&nbsp;вашим мозгом, когда вы&nbsp;становитесь
+                    миллиардером</h4>
+                  <p class="lk-blog__text">What happens to&nbsp;your brain when you become a&nbsp;billionaire</p>
+                </div>
+              </div>
+              <div class="lk-blog__item"> <img src="images/dm-4.jpg" alt="Blog Image" class="lk-blog__img">
+                <div class="lk-blog__content">
+                  <h4 class="lk-blog__title">26&nbsp;лучших бесплатных приложений, сайтов и&nbsp;подкастов о&nbsp;фитнесе</h4>
+                  <p class="lk-blog__text">Break a&nbsp;sweat without breaking the bank: 26&nbsp;of&nbsp;the best free or&nbsp;cheap
+                    fitness apps, sites and podcasts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div></main>
 
   
 
@@ -400,6 +597,19 @@
         <path d="M15 25C20.5 25 25 20.5 25 15C25 9.5 20.5 5 15 5C9.5 5 5 9.5 5 15C5 20.5 9.5 25 15 25ZM15 2.5C21.875 2.5 27.5 8.125 27.5 15C27.5 21.875 21.875 27.5 15 27.5C8.125 27.5 2.5 21.875 2.5 15C2.5 8.125 8.125 2.5 15 2.5ZM15.625 8.75V15.25L12.25 21.25L10.625 20.25L13.75 14.75V8.75H15.625Z" fill="#FA1100"/>
     </symbol>
 
+    <symbol id="slider-left-button" viewBox="0 0 14 27">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3443 26.3625C13.5446 26.1724 13.5527 25.8559 13.3625 25.6557L1.69312 13.3693L13.3588 1.34821C13.5511 1.15004 13.5464 0.83349 13.3482 0.64118C13.15 0.448868 12.8335 0.453617 12.6412 0.651787L0.306885 13.3619L12.6375 26.3443C12.8276 26.5446 13.1441 26.5527 13.3443 26.3625Z" fill="#262D37"/>
+    </symbol>
+
+
+    <symbol id="slider-right-button" viewBox="0 0 14 27">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.655662 26.3625C0.455438 26.1724 0.447288 25.8559 0.637458 25.6557L12.3069 13.3693L0.641178 1.34821C0.448868 1.15004 0.453617 0.83349 0.651787 0.64118C0.849957 0.448868 1.1665 0.453617 1.35881 0.651787L13.6931 13.3619L1.36253 26.3443C1.17236 26.5446 0.855886 26.5527 0.655662 26.3625Z" fill="#262D37"/>
+    </symbol>
+
+
+    <symbol id="more-link-arrow" viewBox="0 0 26 8">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1716 0.46444L25.3536 3.64642C25.5488 3.84168 25.5488 4.15826 25.3536 4.35353L22.1716 7.53551C21.9763 7.73077 21.6597 7.73077 21.4645 7.53551C21.2692 7.34025 21.2692 7.02366 21.4645 6.8284L23.7929 4.49997H1C0.723858 4.49997 0.5 4.27612 0.5 3.99997C0.5 3.72383 0.723858 3.49997 1 3.49997H23.7929L21.4645 1.17155C21.2692 0.976284 21.2692 0.659702 21.4645 0.46444C21.6597 0.269178 21.9763 0.269178 22.1716 0.46444Z" fill="#1F1F22"/>
+    </symbol>
 </svg>
   <script src="js/app.min.js"></script>
 </body>
