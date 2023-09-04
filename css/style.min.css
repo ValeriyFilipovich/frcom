@@ -13409,3 +13409,8 @@ section {
   padding-right: 10px;
   margin-top: 50px;
 }
+
+html.lock {
+  overflow: hidden;
+  touch-action: none;
+}
