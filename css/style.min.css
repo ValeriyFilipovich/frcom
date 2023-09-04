@@ -11285,6 +11285,9 @@ section {
   width: 41px;
   height: 30px;
 }
+.popup-table__button svg:hover {
+  fill: #FA1100;
+}
 @media (max-width: 1100px) {
   .popup-table__button svg {
     width: 54px;
