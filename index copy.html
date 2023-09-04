@@ -97,14 +97,53 @@
     <div class="popup" data-popup="popup-1" data-close-overlay>
     <div class="popup__wrapper" data-close-overlay>
         <div class="popup__content">
-            <button class="button-close popup__close" type="button">x</button>
+            <button class="button-close popup__close" type="button">
+                <svg>
+                    <use xlink:href="#popup-close-icon"></use>
+                </svg>
+            </button>
             <div class="popup__body">
-                <h2>Базовый пример модального окна</h2>
+                <table class="popup-table">
+                    <thead>
+                        <tr>
+                            <th>Студент</th>
+                            <th>Баланс уроков</th>
+                            <th>Тестирования</th>
+                            <th><!-- Кнопка --></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="popup-table__student" data-mobile-text="Студент">
+                                <img class="popup-table__img" src="images/person-1.png" alt="Фото студента">
+                                <h3 class="popup-table__name">Андрей Гулешов</h3>
+                                <p class="popup-table__level">Intermediate, Business English</p>
+                            </td>
+                            <td class="popup-table__balance" data-mobile-text="Баланс уроков">60 из 60</td>
+                            <td class="popup-table__tests" data-mobile-text="Тестирования">
+                                <ul>
+                                    <li>
+                                        <svg>
+                                            <use xlink:href="#calendar-icon"></use>
+                                        </svg>
+                                        <p>11 Ноября - 360 из 650 <span>(60%)</span></p>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td class="popup-table__button">
+                                <a href="#email">
+                                    <svg>
+                                        <use xlink:href="#email-icon"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 </div>
-
     <script src="js/app.min.js"></script>
   </body>
 </html>
